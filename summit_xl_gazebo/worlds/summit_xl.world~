@@ -44,14 +44,6 @@
             <mesh><uri>file:///home/mgandhi3/catkin_ws_summit/src/summit_xl_common/summit_xl_description/meshes/structures/mbzirc.dae</uri></mesh>
           </geometry>
         </visual>
-	  <collision name="collision">
-    <pose>0.5 0.0 0  0 0 -1.5708</pose>    
-        <geometry>
-          <box>
-            <size>0.02 1 1.75</size>
-          </box>
-        </geometry>
-      </collision>
       </link>
     </model>
   </world>
