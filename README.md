@@ -22,4 +22,19 @@ This package contains the node that subscribes to /joy messages and publishes co
 
 The node allows to load different types of joysticks (PS4, PS3, Logitech, Thrustmaster). New models can be easily added by creating new .yaml files. If modbus_io node is available, the digital outputs (ligths, axes, etc.) can also be controlled with the pad. If ptz camera is available, the pan-tilt-zoom can also be commanded with the pad. 
 
+launch files that launch the complete simulation of the robot
 
+
+
+
+<h2>Simulating Summit XL</h2>
+
+1) Install the following dependencies:
+  - summit_xl_common [link](https://github.com/RobotnikAutomation/summit_xl_common)
+  - robotnik_msgs [link](https://github.com/RobotnikAutomation/robotnik_msgs)
+  - robotnik_sensors [link](https://github.com/RobotnikAutomation/robotnik_sensors)
+
+2) Launch Summit XL simulation with: <br>
+  - roslaunch summit_xl_sim_bringup summit_xl_complete.launch
+  
+3) Enjoy! You can use the topic "/summit_xl_control/cmd_vel" to control the Summit XL robot.
