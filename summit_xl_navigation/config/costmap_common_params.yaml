@@ -1,0 +1,18 @@
+obstacle_range: 2.5
+raytrace_range: 3.0
+
+footprint: [[0.35, -0.3], [0.35, 0.3], [-0.35,0.3], [-0.35, -0.3]]
+
+publish_frequency: 1.0
+
+inflation_layer:
+  inflation_radius: 0.5
+
+obstacle_layer:
+  observation_sources: hokuyo_laser
+#  hokuyo_laser: {sensor_frame: hokuyo_base_laser_link, data_type: LaserScan, topic: hokuyo_base/scan, marking: true, clearing: true}
+<<<<<<< HEAD
+  hokuyo_laser: {sensor_frame: hokuyo2_base_link, data_type: LaserScan, topic: hokuyo2_base/scan, marking: true, clearing: true}
+=======
+  hokuyo_laser: {sensor_frame: hokuyo_base_link, data_type: LaserScan, topic: hokuyo_base/scan, marking: true, clearing: true}
+>>>>>>> f6f060295b055dc0f9e235f9ec741aaba8fb8340
